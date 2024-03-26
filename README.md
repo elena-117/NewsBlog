@@ -36,5 +36,5 @@ pipenv shell
 
 * To run the application in the browser, run Run and Debug
 
-![plot](https://ibb.co/HCXQM4M)
+![Screenshot 2024-03-26 123614](https://github.com/elena-117/NewsBlog/assets/57091695/930996a2-3c39-4a6d-94aa-92ec7d44ac25)
 
