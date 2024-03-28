@@ -1,5 +1,5 @@
 # NewsBlog
-A news blog website built on Django. This is a simple application with the ability to add, delete and edit news, as well as display each news on a separate page.
+This is a Django-based news blog website featuring essential functionalities such as adding, deleting, and editing news articles. Furthermore, each news article is showcased on its dedicated page, providing an intuitive browsing experience for users.
 
 ## How to run the application
 
