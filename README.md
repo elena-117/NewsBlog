@@ -31,9 +31,10 @@ pipenv shell
 
 * To start the virtual environment, open the settings.py file and select the corresponding item
 
-(https://ibb.co/SfbX0z9)
+![Screenshot 2024-03-26 122643](https://github.com/elena-117/NewsBlog/assets/57091695/06a33708-419e-410a-9bfe-4517bb859c6c)
+
 
 * To run the application in the browser, run Run and Debug
 
-(https://ibb.co/HCXQM4M)
+![Screenshot 2024-03-26 123614](https://github.com/elena-117/NewsBlog/assets/57091695/930996a2-3c39-4a6d-94aa-92ec7d44ac25)
 
