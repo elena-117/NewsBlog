@@ -1,0 +1,23 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Edit article{% endblock %}
+
+{% block content %}
+<div class="main">
+    <h1>Edit article</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.title }}<br>
+        {{ form.preview }}<br>
+        {{ form.full_text }}<br>
+        {{ form.date }}<br>
+
+        <span>{{ error }}</span>
+
+        <!-- <input type="date" class="form-control"><br> -->
+
+        <button class="btn btn-warning" type="submit">Update</button>
+    </form>
+</div>
+{% endblock %}
