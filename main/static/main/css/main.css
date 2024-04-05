@@ -1,0 +1,83 @@
+body {
+    background: rgb(57, 60, 60);color: #d6d6d9;
+}
+
+aside {
+    float: right;
+    background: orange;
+    width: 22%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 6px solid #333534;
+}
+
+aside img {
+    max-width: 75px;
+}
+
+aside ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+aside .menu a {
+    display: block;
+    font-size: 24px;
+    margin-top: 40px;
+    color: #040404;
+    text-decoration: none;
+}
+
+aside .menu li {
+    transition: transform .8s ease;
+}
+
+aside .menu a:hover, aside .menu li {
+    transform: scale(1.05);
+}
+
+main {
+    width: 78%;
+    float: left;
+    margin-top: 45px;
+    text-align: center;
+
+}
+
+main .main h1,
+div.about h1 {
+    font-size: 45px;
+}
+
+main .main p,
+div.about p {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* .alert-warning {
+    float: left;
+    clear: both;
+    width: 550px;
+    margin: 20px 34%;
+    text-align: left;
+} */
+
+form {
+    width: 75%;
+    position: relative;
+    margin:auto;
+}
+
+main .news-main h1 {
+    margin-bottom: 30px;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 24px;
+}
+
+main .news-main div.alert-warning {
+    --bs-alert-bg: #dad9d7;
+
+}
