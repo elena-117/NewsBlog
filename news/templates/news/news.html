@@ -1,0 +1,24 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}News and Stories{% endblock %}
+
+{% block content %}
+<div class="main news-main">
+        <h1>Thought-provoking news and stories</h1>
+
+        {% if news %}
+                {% for el in news %}
+                        <div class="alert alert-warning">
+                                <h3>{{ el.title }}</h3>
+                                <p>{{ el.preview }}</p>
+                                <a href="{% url 'article-detail' el.id %}" class="btn btn-warning">Read more</a>
+                        </div>
+                {% endfor %}
+        {% else %}
+                <p>No news!</p>                
+        {% endif %}
+
+        <!-- <button class="btn btn-warning">{% filter upper %}More{% endfilter %}</button> -->
+
+</div>
+{% endblock %}
