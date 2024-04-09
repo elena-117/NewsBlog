@@ -1,5 +1,5 @@
 # NewsBlog
-This is a Django-based news blog website featuring essential functionalities such as adding, deleting, and editing news articles. Furthermore, each news article is showcased on its dedicated page, providing an intuitive browsing experience for users.
+This is a Django-based news blog website featuring essential functionalities such as adding, deleting, and editing news articles. Furthermore, each news article is showcased on its dedicated page, providing an intuitive browsing experience for users. This website also provides the ability to authorize users. Only authorized users can add, edit and delete articles.
 
 ## How to run the application
 
