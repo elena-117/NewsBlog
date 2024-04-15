@@ -11,9 +11,44 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    <h1>My Dashboard</h1>
+    <aside>
+        <img src="{% static 'main/img/logo-spotlight.svg' %}" alt="logo-spotlight">
 
-    <a href="{% url 'user-logout' %}">Log out</a>
+        <ul class="menu">
+            <a href="{% url 'home' %}">
+                <li><i class="fa-solid fa-house"></i> Home</li>
+            </a>
+            <a href="{% url 'news' %}">
+                <li><i class="fa-solid fa-earth-americas"></i> News</li>
+            </a>
+            <a href="{% url 'about' %}">
+                <li><i class="fa-regular fa-star"></i> About</li>
+            </a>
+            <a href="">
+                <li><i class="fa-solid fa-envelope"></i> Contact</li>
+            </a>
+            <a href="{% url 'create' %}">
+                <li><button class="btn btn-success"><i class="fa-solid fa-feather"></i> Add news</button></li>
+            </a>
+        </ul>
+
+        <ul class="auth">
+            <a class="logout-btn auth-btn" href="{% url 'user-logout' %}">Log out</a>
+        </ul>
+    </aside>
+
+    <main>
+        {% block content %}
+            <h1>My Dashboard</h1>
+            
+            <ul class="my-dashboard">
+                <li>User Profile for:  {{user.username}}</li>
+                <li>Email:  {{user.email}}</li>
+                <li>Date Joined:  {{user.date_joined}}</li>
+                <li>Last Login:  {{user.last_login}}</li>
+            </ul>
+        {% endblock %}
+    </main>
 
 </body>
 </html>
