@@ -10,6 +10,7 @@ aside {
     height: 100vh;
     color: #fff;
     border-right: 6px solid #333534;
+    overflow: auto; 
 }
 
 aside img {
@@ -19,6 +20,32 @@ aside img {
 aside ul {
     list-style: none;
     padding-left: 0;
+}
+
+aside ul.auth {
+    position: absolute;
+    bottom: 30px;
+}
+
+aside ul.auth .auth-btn {
+    color: #333534;
+    padding: 12px 20px;
+    border: 1px solid #333534;
+    text-decoration: none;
+}
+
+aside ul.auth .auth-btn:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+aside ul.auth .signup-btn.auth-btn {
+    color: azure;
+    background-color: #333534;
+    margin-left: 10px;
+}
+
+aside ul.auth .signup-btn.auth-btn:hover {
+    background: #414342;
 }
 
 aside .menu a {
@@ -80,4 +107,9 @@ main .news-main h1 {
 main .news-main div.alert-warning {
     --bs-alert-bg: #dad9d7;
 
+}
+
+ul.my-dashboard {
+    text-align: left;
+    list-style: none;
 }
