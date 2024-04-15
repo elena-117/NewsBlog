@@ -7,7 +7,10 @@
         <h1>{{ article.title }}</h1>
         <p>{{ article.date }}</p>
         <p>{{ article.full_text }}</p>
+
+        {% if user.is_authenticated == True %}
         <a href="{% url 'article-delete' article.id %}" class="btn btn-danger">Delete</a>
         <a href="{% url 'article-edit' article.id %}" class="btn btn-warning">Edit</a>
+        {% endif %}
 </div>
 {% endblock %}

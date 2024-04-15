@@ -27,14 +27,26 @@
             <a href="">
                 <li><i class="fa-solid fa-envelope"></i> Contact</li>
             </a>
+            {% if user.is_authenticated == True %}
             <a href="{% url 'create' %}">
                 <li><button class="btn btn-success"><i class="fa-solid fa-feather"></i> Add news</button></li>
             </a>
+            {% endif %}
         </ul>
 
         <ul class="auth">
-            <a href="{% url 'my-login' %}"><i class="fa-solid fa-arrow-right-to-bracket"></i> Log in</a>
-            <a href="{% url 'register' %}"></i>Sign up</a>
+            {% if user.is_authenticated == False %}
+            {% csrf_token %}  
+            {{loginform.as_p}}
+            <a class="login-btn auth-btn" href="{% url 'my-login' %}"><i class="fa-solid fa-arrow-right-to-bracket"></i> Log in</a>
+            <a class="signup-btn auth-btn" href="{% url 'register' %}"></i>Sign up</a>
+            {% endif %}
+        </ul>
+
+        <ul class="auth">
+            {% if user.is_authenticated == True %}
+            <a class="logout-btn auth-btn" href="{% url 'user-logout' %}">Log out</a>
+            {% endif %}
         </ul>
     </aside>
 
