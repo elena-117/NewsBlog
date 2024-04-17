@@ -106,7 +106,9 @@ main .news-main h1 {
 
 main .news-main div.alert-warning {
     --bs-alert-bg: #dad9d7;
-
+    width: 75%;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 ul.my-dashboard {
