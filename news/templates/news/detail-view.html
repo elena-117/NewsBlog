@@ -5,7 +5,7 @@
 {% block content %}
 <div class="main">
         <h1>{{ article.title }}</h1>
-        <p>{{ article.date }}</p>
+        <p>{{ article.date }} at {{ article.time }}</p>
         <p>{{ article.full_text }}</p>
 
         {% if user.is_authenticated == True %}
