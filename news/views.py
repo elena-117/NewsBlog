@@ -32,7 +32,7 @@ class ArticleDeleteView(DeleteView):
 def create(request):
     error = ''
     if request.method == 'POST':
-        form = ArticlesForm(request.POST)
+        form = ArticlesForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             return redirect('news')

@@ -10,6 +10,7 @@ class Articles(models.Model):
     full_text = models.TextField('Article')
     date = models.DateField('Posting date')
     time = models.TimeField('Posting time', default=datetime.time(16, 00))
+    image = models.ImageField(null=True, blank=True, upload_to='images/')
 
     def __str__(self):
         return self.title
