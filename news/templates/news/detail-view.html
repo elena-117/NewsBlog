@@ -7,6 +7,11 @@
         <h1>{{ article.title }}</h1>
         <p>{{ article.date }} at {{ article.time }}</p>
         <p>{{ article.full_text }}</p>
+        <br>
+
+        {% if article.image %}
+        <img src="{{ article.image.url }}" width="500">
+        {% endif %}<br><br>
 
         {% if user.is_authenticated == True %}
         <a href="{% url 'article-delete' article.id %}" class="btn btn-danger">Delete</a>
