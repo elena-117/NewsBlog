@@ -9,6 +9,7 @@
         {% if news %}
                 {% for el in news %}
                         <div class="alert alert-warning">
+                                <span class="posted-date">Posted {{el.date}} at {{el.time}}</span><br>
                                 <h3>{{ el.title }}</h3>
                                 <p>{{ el.preview }}</p>
                                 <a href="{% url 'article-detail' el.id %}" class="btn btn-warning">Read more</a>
