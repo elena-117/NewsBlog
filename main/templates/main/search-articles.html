@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="main">
+        {% if searched %}
+            <h1>You Searched For... {{ searched }}</h1><br>
+            {% for article in articles %}
+            <a class="search-link" href="{% url 'article-detail' article.id %}">{{ article }}</a> <br>
+            {% endfor %}
+
+
+        {% else %}
+            <h1>Hey! You Forgot To Search For An Article...</h1>
+        {% endif %}
+        
+
+ 
+</div>
+{% endblock %}
