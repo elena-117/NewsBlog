@@ -5,8 +5,8 @@ body {
 aside {
     float: right;
     background: orange;
-    width: 22%;
-    padding: 2.5%;
+    width: 20%;
+    padding: 2%;
     height: 100vh;
     color: #fff;
     border-right: 6px solid #333534;
@@ -48,9 +48,13 @@ aside ul.auth .signup-btn.auth-btn:hover {
     background: #414342;
 }
 
+aside ul.auth .login-btn {
+    padding: 12px 18px;
+}
+
 aside .menu a {
     display: block;
-    font-size: 24px;
+    font-size: 22px;
     margin-top: 40px;
     color: #040404;
     text-decoration: none;
@@ -65,7 +69,7 @@ aside .menu a:hover, aside .menu li {
 }
 
 main {
-    width: 78%;
+    width: 80%;
     float: left;
     margin-top: 45px;
     text-align: center;
@@ -83,13 +87,56 @@ div.about p {
     margin: 20px auto;
 }
 
-/* .alert-warning {
-    float: left;
-    clear: both;
-    width: 550px;
-    margin: 20px 34%;
-    text-align: left;
-} */
+main .main .search-form {
+    width: 98%;
+    margin: 0 10px;
+}
+
+main .main .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+
+main .main .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+  }
+
+main .main .grid-item h3 {
+    font-size: 20px;
+}
+
+main .grid-item a.btn-warning {
+    --bs-btn-bg: transparent;
+    border-width: 2px;
+}
+
+main .grid-item a.btn-warning.btn-title {
+    background-color: transparent;
+    border: none;
+}
+
+main .grid-item a.btn-warning.btn-title:hover {
+    --bs-btn-bg: transparent;
+    border: none;
+}
+
+main .grid-item:hover a.btn-warning.btn-img {
+    background-color: #ffcd39;
+}
+
+main .main .search-link {
+    font-size: 20px;
+    color: #6dcded;
+}
+
+main .main .search-link:hover {
+    color: #308dac;
+}
 
 form {
     width: 75%;
@@ -109,6 +156,11 @@ main .news-main div.alert-warning {
     width: 75%;
     margin: auto;
     margin-bottom: 20px;
+}
+
+main .news-main .posted-date {
+    display: block;
+    text-align: right;
 }
 
 ul.my-dashboard {
