@@ -11,17 +11,18 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    <h1>Register now!</h1>
+    <div class="signup-page">
+        <h1>Register now!</h1>
 
-    <form method="post" autocomplete="off">
-    
-        {% csrf_token %}
-    
-        {{registerform.as_p}}
-    
-        <input class="btn btn-success" type="submit" value="Register">
-    
-    </form>
-
+        <form method="post" autocomplete="off">
+        
+            {% csrf_token %}
+        
+            {{registerform.as_p}}
+        
+            <input class="btn btn-success" type="submit" value="Register">
+        
+        </form>
+    </div>
 </body>
 </html>
