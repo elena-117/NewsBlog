@@ -1,6 +1,22 @@
 # NewsBlog
 This is a Django-based news blog website featuring essential functionalities such as adding, deleting, and editing news articles. Furthermore, each news article is showcased on its dedicated page, providing an intuitive browsing experience for users. This website also provides the ability to authorize users. Only authorized users can add, edit and delete articles.
 
+## Roadmap
+
+- [x] Creation of the basic pages of the site: Home, News and About pages.
+- [x] Adding the option to add, edit and delete articles on the site.
+- [x] Opening each news item on a dedicated page.
+- [x] Adding the option for users to register on the website, also Log in and Log out.
+- [x] Restriction for adding, editing and deleting articles: only authorized and logged in users can add, edit and delete articles.
+- [x] The option to add and remove images to articles.
+- [x] Display a news grid on the home page.
+- [x] A search feature for articles on the website.
+- [ ] Collapsible navbar.
+- [ ] Improving website design.
+- [ ] Adding Pagination to the News page.
+- [ ] Adding Pagination to the "News" page.
+- [ ] etc...
+
 ## How to run the application
 
 * To run this application you must have Python installed
