@@ -72,8 +72,8 @@ main {
     width: 80%;
     float: left;
     margin-top: 45px;
+    margin-bottom: 80px;
     text-align: center;
-
 }
 
 main .main h1,
@@ -166,4 +166,12 @@ main .news-main .posted-date {
 ul.my-dashboard {
     text-align: left;
     list-style: none;
+}
+
+.signup-page, .login-page {
+    margin: 30px;
+}
+
+main .btn-delete {
+    margin-right: 12px;
 }
