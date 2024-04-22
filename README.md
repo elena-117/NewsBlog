@@ -14,6 +14,7 @@ This is a Django-based news blog website featuring essential functionalities suc
 - [ ] Collapsible navbar.
 - [ ] Improving website design.
 - [ ] Adding Pagination to the News page.
+- [ ] Making the website design responsive and adaptive.
 - [ ] etc...
 
 ## How to run the application
