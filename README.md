@@ -4,7 +4,7 @@ This is a Django-based news blog website featuring essential functionalities suc
 ## Roadmap
 
 - [x] Creation of the basic pages of the site: Home, News and About pages.
-- [x] Adding the option to add, edit and delete articles on the site.
+- [x] Adding the option to add, edit and delete articles on the website.
 - [x] Opening each news item on a dedicated page.
 - [x] Adding the option for users to register on the website, also Log in and Log out.
 - [x] Restriction for adding, editing and deleting articles: only authorized and logged in users can add, edit and delete articles.
@@ -14,7 +14,6 @@ This is a Django-based news blog website featuring essential functionalities suc
 - [ ] Collapsible navbar.
 - [ ] Improving website design.
 - [ ] Adding Pagination to the News page.
-- [ ] Adding Pagination to the "News" page.
 - [ ] etc...
 
 ## How to run the application
